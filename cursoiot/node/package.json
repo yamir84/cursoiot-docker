@@ -1,0 +1,21 @@
+{
+  "name": "nodecurso",
+  "version": "1.0.0",
+  "description": "CursoIOT",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "IOT"
+  ],
+  "author": "CubaElectronica",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^4.1.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

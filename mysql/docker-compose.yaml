@@ -1,0 +1,25 @@
+version: '3.8'
+services: 
+  mysql:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: mysql_
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: root 
+    ports: 
+      - 33060:3306
+    volumes: 
+      - ./mysqldb:/var/lib/mysql
+    networks: 
+      iot_net:
+        aliases: 
+          - mysql_host
+
+volumes: 
+ mysqldb: {}
+networks: 
+ iot_net:
+  name: curso_iot_net
+  driver: bridge

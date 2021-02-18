@@ -1,0 +1,29 @@
+version: '3.8'
+services: 
+  iot:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: iotserver_
+    restart: always
+    environment: 
+      DATABASE_HOST: mysql_host
+      DATABASE_PORT: 3306
+      DATABASE_DATABASE: curso_iot
+      DATABASE_USER: root
+      DATABASE_PASSWORD: root
+    ports: 
+      - 80:80
+    volumes: 
+      - . :/var/www/html
+    networks: 
+      iot_net:
+        aliases: 
+          - iotserver_host
+
+volumes: 
+ . : {}
+networks: 
+ iot_net:
+  name: curso_iot_net
+  driver: bridge
