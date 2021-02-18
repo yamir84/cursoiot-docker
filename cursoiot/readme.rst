@@ -22,8 +22,6 @@ https://freeiot.tk/downloads
 🔴 Visítenos en Blogger: 👉  http://cubaelectronica.blogspot.com/
 🔴 Visítenos en Twitter: 👉  https://twitter.com/CubaElectronic
 
-Comenta para mas información y no olvide suscribirse al Canal y compartir para que sus amigos les llegue también el fabuloso mundo del conocimiento.
-
 Gracias!!!! ✌🏻✌🏻✌🏻✌🏻✌🏻✌🏻✌🏻
 
 Licencia: MIT
